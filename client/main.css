@@ -1,0 +1,95 @@
+/* CSS declarations go here */
+.configure.checked {
+  text-decoration: line-through;
+  display: block;
+}
+.checked {
+  display: none;
+}
+/* CSS declarations go here */
+html {
+}
+body {
+  background-color: #01a0e2 !important;
+}
+.task-items:not(.logo-item) {
+  background: #fff900;
+  min-height: 130px;
+}
+.pointer {
+  cursor: pointer;
+}
+.new-task-container {
+}
+.toggle-deployment {
+  min-width: 40px;
+  min-height: 15px;
+}
+.task-details .text {
+  color: white;
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.item {
+  margin: 10px;
+  font-weight: bold;
+  color: black;
+  font-size: 26px;
+}
+.price {
+  font-size: 30px;
+}
+.itemSubText {
+  font-size: 18px;
+}
+
+.wd-100p {
+  width: 100%;
+}
+.wd-30p {
+  width: 30%;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+.full-width {
+  min-width: 1920px;
+}
+.categories {
+  display: flex;
+  justify-content: center;    /* Change this */
+  flex-wrap: wrap;
+}
+.category-item, .logo-item {
+  min-width: 28%;
+  margin: 40px;
+  margin-top: 0;
+}
+.new-item input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.logo-item {
+  background-image: url(img/menu.jpg);
+  background-position: left top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 350px;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.new-task input {
+  height: 50px;
+  width: 300%;
+}

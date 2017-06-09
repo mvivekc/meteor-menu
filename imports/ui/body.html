@@ -1,0 +1,29 @@
+<body>
+  <div class="flex-container wd-100p">
+    {{#if isConfigure}}
+      <div class="flex-between full-width category">
+        <div class="new-task-container">
+          <form class="new-task">
+            <input type="text" name="text" placeholder="Add category" />
+          </form>
+        </div>
+        <div class="pointer toggle-deployment">Production</div>
+      </div>
+    {{/if}}
+  </div>
+  <div class="flex-container categories-container">
+    <div class="categories full-width">
+      {{#each tasks}}
+        {{#if showCategory @index}}
+          {{> task}}
+        {{else}}
+          {{> logo}}
+        {{/if}}
+      {{/each}}
+    </div>
+  </div>
+</body>
+<template name="logo">
+  <div class="category-item flex-around logo-item">
+  </div>
+</template>
