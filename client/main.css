@@ -24,6 +24,10 @@ body {
 .toggle-deployment {
   min-width: 40px;
   min-height: 15px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 .task-details .text {
   color: white;
@@ -33,16 +37,17 @@ body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 .item {
-  margin: 10px;
+  margin:3px 10px;
+  line-height: 40px;
   font-weight: bold;
   color: black;
-  font-size: 26px;
+  font-size: 34px;
 }
 .price {
-  font-size: 30px;
+  font-size: 38px;
 }
 .itemSubText {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .wd-100p {
@@ -67,10 +72,9 @@ body {
   justify-content: center;    /* Change this */
   flex-wrap: wrap;
 }
-.category-item, .logo-item {
-  min-width: 28%;
-  margin: 40px;
-  margin-top: 0;
+.category, .logo-item {
+  min-width: 30%;
+  margin: 20px 0 0 30px;
 }
 .new-item input {
   display: flex;
@@ -80,10 +84,12 @@ body {
 }
 .logo-item {
   background-image: url(img/menu.jpg);
-  background-position: left top;
-  background-size: contain;
   background-repeat: no-repeat;
-  min-height: 350px;
+  min-height: 500px;
+  overflow: visible;
+  background-position: center;
+  background-size: cover;
+  transform: scale(0.85);
 }
 .flex-between {
   display: flex;

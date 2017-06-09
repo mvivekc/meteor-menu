@@ -1,29 +1,26 @@
 <body>
-  <div class="flex-container wd-100p">
-    {{#if isConfigure}}
-      <div class="flex-between full-width category">
-        <div class="new-task-container">
-          <form class="new-task">
-            <input type="text" name="text" placeholder="Add category" />
-          </form>
-        </div>
-        <div class="pointer toggle-deployment">Production</div>
+  {{#if isConfigure}}
+    <div class="full-width">
+      <div class="new-task-container">
+        <form class="new-task">
+          <input type="text" name="text" placeholder="Add category" />
+        </form>
       </div>
-    {{/if}}
-  </div>
-  <div class="flex-container categories-container">
-    <div class="categories full-width">
-      {{#each tasks}}
-        {{#if showCategory @index}}
-          {{> task}}
-        {{else}}
-          {{> logo}}
-        {{/if}}
-      {{/each}}
+      <div class="pointer toggle-deployment">Move To Production</div>
     </div>
+  {{/if}}
+  <div class="categories full-width">
+    {{#each tasks}}
+      {{#if showCategory @index}}
+        {{> task}}
+      {{else}}
+        {{> logo}}
+      {{/if}}
+    {{/each}}
+    {{run_masonry}}
   </div>
 </body>
 <template name="logo">
-  <div class="category-item flex-around logo-item">
+  <div class="category logo-item">
   </div>
 </template>

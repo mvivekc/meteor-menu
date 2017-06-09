@@ -21,9 +21,19 @@ Template.body.helpers({
     return Tasks.find({}, { sort: { createdAt: -1 } });
   },
   showCategory(index) {
-    console.log(index)
     return index !== 1;
   },
+  run_masonry(){
+    console.log("running run_masonry")
+    Meteor.setTimeout(function(){
+      $('.categories').masonry({
+        // options...
+        itemSelector: '.category',
+        columnWidth: 80,
+        gutter: 50
+      });
+    }, 400);
+  }
 });
 Template.registerHelper('and',(a,b)=>{
   return a && b;
@@ -34,10 +44,18 @@ Template.registerHelper('or',(a,b)=>{
 Template.registerHelper('not',(a)=>{
   return !a;
 });
-
+run_masonry = 
 Template.body.events({
   'click .toggle-deployment'(){
     Session.set("type", Session.get("type") === "configure" ? "production" : "configure");
+    Meteor.setTimeout(function(){
+      $('.categories').masonry({
+        // options...
+        itemSelector: '.category',
+        columnWidth: 80,
+        gutter: 50
+      });
+    }, 400);
   },
   'submit .new-task'(event) {
     // Prevent default browser form submit
