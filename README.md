@@ -13,7 +13,7 @@ Features
 
 ## Installation
 
- - git clone <meteor-menu-repo>
+ - git clone https://github.com/mvivekc/meteor-menu.git
  - cd meteor-menu
  - npm install
  - meteor #Boom!, your app starts!!
