@@ -55,8 +55,8 @@ body {
   font-size: 24px;
 }
 
-.wd-100p {
-  width: 100%;
+.wd-90p {
+  width: 90%;
 }
 .wd-30p {
   width: 30%;
@@ -76,10 +76,11 @@ body {
   display: flex;
   justify-content: center;    /* Change this */
   flex-wrap: wrap;
-  margin-left: 1.5%;
+  width: 100%;
+  min-height: 200px;
 }
 .category {
-  min-width: 30%;
+  width: 33.33%;
   margin: 20px 0 0 0px;
 }
 form {

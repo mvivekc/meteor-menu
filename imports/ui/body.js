@@ -34,11 +34,8 @@ Template.body.events({
   'click .toggle-deployment'(){
     Session.set("type", Session.get("type") === "configure" ? "production" : "configure");
     Meteor.setTimeout(function(){
-      $('.categories').masonry({
-        // options...
-        itemSelector: '.category',
-        columnWidth: 80,
-        gutter: 50
+      $('.categories').css("marginLeft", Math.floor($(".task:first").outerWidth(true)/10)).masonry({
+        itemSelector: '.category'
       });
     }, 400);
   },
