@@ -8,3 +8,11 @@ Features
  - Remove items not available from the menu
  
 Logo hardcoded. Can change based on the restaurants logo.
+
+
+#Installation
+
+ - git clone <meteor-menu-repo>
+ - cd meteor-menu
+ - npm install #make sure npm is installed
+ - meteor #Boom!, your app starts!!
