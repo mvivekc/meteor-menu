@@ -9,9 +9,13 @@ Features
  
 Logo hardcoded. Can change based on the restaurants logo.
 
+## Required
+ - nodejs, npm, [meteor](https://www.meteor.com/)
+
+
 ## Installation
 
  - git clone <meteor-menu-repo>
  - cd meteor-menu
- - npm install #make sure npm is installed
+ - npm install
  - meteor #Boom!, your app starts!!
