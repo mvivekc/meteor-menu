@@ -9,8 +9,7 @@ Features
  
 Logo hardcoded. Can change based on the restaurants logo.
 
-
-#Installation
+## Installation
 
  - git clone <meteor-menu-repo>
  - cd meteor-menu
