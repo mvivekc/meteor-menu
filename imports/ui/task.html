@@ -1,30 +1,31 @@
 <template name="task">
-  <div class="category">
-    <div class="task wd-100p">
-      <div class="task-details">
-        {{#if isConfigure}}
-          <button class="delete pull-right">&times;</button>
-        {{/if}}
-        <span class="text">{{text}}</span>
-      </div>
-      {{#if isConfigure}}
-        <div class="task-item-add">
-          <form class="new-item">
-            <input type="text" name="itemText" placeholder="Item" />
-            <input type="text" name="itemSubText" placeholder="Sub text" />
-            <input type="text" name="price" placeholder="Price" />
-            <input type="submit" value="Add"/>
-          </form>
+  {{#if showItems}}
+    <div class="category">
+      <div class="task wd-100p">
+        <div class="task-details">
+          {{#if isConfigure}}
+            <button class="delete pull-right">&times;</button>
+          {{/if}}
+          <span class="text">{{text}}</span>
         </div>
-      {{/if}}
-
-      <div class="task-items">
-        {{#each items}}
-          {{> item}}
-        {{/each}}
+        {{#if isConfigure}}
+          <div class="task-item-add">
+            <form class="new-item">
+              <input type="text" name="itemText" placeholder="Item" />
+              <input type="text" name="itemSubText" placeholder="Sub text" />
+              <input type="text" name="price" placeholder="Price" />
+              <input type="submit" value="Add"/>
+            </form>
+          </div>
+        {{/if}}
+        <div class="task-items">
+          {{#each items}}
+            {{> item}}
+          {{/each}}
+        </div>
       </div>
     </div>
-  </div>
+  {{/if}}
 </template>
 <template name="item">
   <div class="item {{#if isConfigure}}configure{{/if}} {{#if not available}}checked{{/if}}">

@@ -11,16 +11,7 @@
   {{/if}}
   <div class="categories full-width">
     {{#each tasks}}
-      {{#if showCategory @index}}
-        {{> task}}
-      {{else}}
-        {{> logo}}
-      {{/if}}
+      {{> task}}
     {{/each}}
   </div>
 </body>
-<template name="logo">
-  <div class="category logo-item">
-    <div class="wd-100p"></div>
-  </div>
-</template>

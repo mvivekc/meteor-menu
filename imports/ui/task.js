@@ -9,6 +9,10 @@ Template.task.helpers({
   items() { // Show newest tasks at the top
     return Items.find({task_id: this._id}, { sort: { createdAt: -1 } });
   },
+  showItems(){
+    let sessionType = Session.get("type");
+    return sessionType === "configure" || (sessionType === "production" && Items.find({task_id: this._id}).count() !== 0);
+  }
 });
 
 Template.task.events({

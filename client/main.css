@@ -12,9 +12,10 @@ html {
 body {
   background-color: #01a0e2 !important;
 }
-.task-items:not(.logo-item) {
+.task-items {
   background: #fff900;
   min-height: 130px;
+  padding: 6px;
 }
 .pointer {
   cursor: pointer;
@@ -75,11 +76,10 @@ body {
   display: flex;
   justify-content: center;    /* Change this */
   flex-wrap: wrap;
-  margin-left: 1%;
+  margin-left: 1.5%;
 }
-.category, .logo-item {
+.category {
   min-width: 30%;
-  padding: 10px;
   margin: 20px 0 0 0px;
 }
 form {
@@ -94,15 +94,6 @@ form {
   border: 0;
   border-radius: 0;
   width: 100%;
-}
-.logo-item {
-  background-image: url(img/menu.jpg);
-  background-repeat: no-repeat;
-  min-height: 450px;
-  overflow: visible;
-  width: 33%;
-  background-position: left -38px top;
-  background-size: cover;
 }
 .flex-between {
   display: flex;
