@@ -31,10 +31,12 @@ Template.registerHelper('not',(a)=>{
   return !a;
 });
 Template.body.events({
-  'click .toggle-deployment'(){
-    Session.set("type", Session.get("type") === "configure" ? "production" : "configure");
+  'click .toggle-deployment, click .refresh'(){
+    //Session.set("type", Session.get("type") === "configure" ? "production" : "configure");
+    Session.set("type", "production");
+    $(".categories").masonry('destroy');
     Meteor.setTimeout(function(){
-      $('.categories').css("marginLeft", Math.floor($(".task:first").outerWidth(true)/10)).masonry({
+      $('.categories').masonry({
         itemSelector: '.category'
       });
     }, 400);

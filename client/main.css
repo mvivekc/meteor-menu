@@ -20,6 +20,11 @@ body {
 .pointer {
   cursor: pointer;
 }
+.refresh {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .toggle-deployment {
   min-width: 40px;
   min-height: 15px;
@@ -68,9 +73,6 @@ body {
 .flex-around {
   display: flex;
   justify-content: space-around;
-}
-.full-width {
-  min-width: 1920px;
 }
 .categories {
   display: flex;

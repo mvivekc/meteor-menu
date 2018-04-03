@@ -9,6 +9,9 @@
       <div class="pointer toggle-deployment">Move To Production</div>
     </div>
   {{/if}}
+  {{#if not isConfigure}}
+    <div class="refresh pointer">...</div>
+  {{/if}}
   <div class="categories">
     {{#each tasks}}
       {{> task}}
