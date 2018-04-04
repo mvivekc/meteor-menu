@@ -35,7 +35,8 @@ Template.body.events({
     Session.set("type", Session.get("type") === "configure" ? "production" : "configure");
     Meteor.setTimeout(function(){
       $('.categories').css("marginLeft", Math.floor($(".task:first").outerWidth(true)/10)).masonry({
-        itemSelector: '.category'
+        itemSelector: '.category',
+        gutter: 10
       });
     }, 400);
   },

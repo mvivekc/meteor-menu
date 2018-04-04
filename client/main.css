@@ -15,7 +15,7 @@ body {
 .task-items {
   background: #fff900;
   min-height: 130px;
-  padding: 6px;
+  padding: 8px 6px;
 }
 .pointer {
   cursor: pointer;
@@ -30,26 +30,26 @@ body {
 }
 .task-details .text {
   color: white;
-  font-size: 34px;
+  font-size: 44px;
   text-transform: uppercase;
   font-weight: 900;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 .item {
-  margin:3px 10px;
+  margin: 10px;
   line-height: 40px;
   font-weight: bold;
   color: black;
-  font-size: 34px;
+  font-size: 40px;
 }
 .item:first-child {
   margin-top: 0;
 }
 .price-text {
-  font-size: 38px;
+  font-size: 44px;
 }
 .price {
-  font-size: 30px;
+  font-size: 40px;
 }
 .itemSubText {
   font-size: 24px;
@@ -70,7 +70,7 @@ body {
   justify-content: space-around;
 }
 .full-width {
-  min-width: 1920px;
+  width: 100%;
 }
 .categories {
   display: flex;
@@ -80,7 +80,7 @@ body {
   min-height: 200px;
 }
 .category {
-  width: 33.33%;
+  width: 32%;
   margin: 20px 0 0 0px;
 }
 form {
