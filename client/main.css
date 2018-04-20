@@ -12,10 +12,22 @@ html {
 body {
   background-color: #01a0e2 !important;
 }
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
+.break-word {
+  word-wrap: break-word;
+}
+.no-break {
+  white-space: nowrap
+}
 .task-items {
   background: #fff900;
   min-height: 130px;
-  padding: 8px 6px;
+  padding: 12px;
 }
 .pointer {
   cursor: pointer;

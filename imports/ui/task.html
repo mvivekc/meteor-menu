@@ -28,20 +28,22 @@
   {{/if}}
 </template>
 <template name="item">
-  <div class="item {{#if isConfigure}}configure{{/if}} {{#if not available}}checked{{/if}}">
+  <div class="item table-row {{#if isConfigure}}configure{{/if}} {{#if not available}}checked{{/if}}">
     {{#if isConfigure}}
-      <button class="delete">&times;</button>
+      <div class="table-cell"><button class="delete">&times;</button></div>
     {{/if}}
-    <span class="itemText">{{itemText}}</span>
-    {{#if itemSubText}}
-      <strong class="itemSubText">({{itemSubText}})</strong>
-    {{/if}}
-    <span class="price pull-right">
+    <div class="itemText table-cell break-word">
+      {{itemText}}
+      {{#if itemSubText}}
+        <div class="itemSubText table-cell">({{itemSubText}})</div>
+      {{/if}}
+    </div>
+    <div class="price table-cell no-break">
       <span class="fa fa-inr"></span>
       <span class="price-text">{{price}}/-</span>
-    </span>
+    </div>
     {{#if isConfigure}}
-      <input class="toggle-available" type="checkbox" checked="{{available}}"/>
+      <div class="table-cell"><input class="toggle-available" type="checkbox" checked="{{available}}"/></div>
     {{/if}}
   </div>
 </template>
