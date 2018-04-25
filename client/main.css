@@ -4,7 +4,7 @@
   display: block;
 }
 .checked {
-  display: none;
+  display: none !important;
 }
 /* CSS declarations go here */
 html {
