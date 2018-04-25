@@ -3,7 +3,7 @@
   text-decoration: line-through;
   display: block;
 }
-.checked {
+.checked:not(.configure) {
   display: none !important;
 }
 /* CSS declarations go here */
