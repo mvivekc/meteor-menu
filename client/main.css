@@ -1,7 +1,7 @@
 /* CSS declarations go here */
 .configure.checked {
   text-decoration: line-through;
-  display: block;
+  display: table-row;
 }
 .checked:not(.configure) {
   display: none !important;
@@ -11,6 +11,9 @@ html {
 }
 body {
   background-color: #01a0e2 !important;
+}
+.disp-table {
+  display: table;
 }
 .table-row {
   display: table-row;
@@ -28,6 +31,7 @@ body {
   background: #fff900;
   min-height: 130px;
   padding: 12px;
+  width: 100%;
 }
 .pointer {
   cursor: pointer;
@@ -62,11 +66,15 @@ body {
 }
 .price {
   font-size: 40px;
+  text-align: right;
+  padding-top: 3px;
 }
 .itemSubText {
   font-size: 24px;
 }
-
+.wd-60{
+  width: 60px;
+}
 .wd-90p {
   width: 90%;
 }
