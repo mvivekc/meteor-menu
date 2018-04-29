@@ -1,7 +1,7 @@
 /* CSS declarations go here */
 .configure.checked {
   text-decoration: line-through;
-  display: block;
+  display: table-row;
 }
 .checked:not(.configure) {
   display: none !important;
@@ -11,6 +11,9 @@ html {
 }
 body {
   background-color: #01a0e2 !important;
+}
+.disp-table {
+  display: table;
 }
 .table-row {
   display: table-row;
@@ -66,7 +69,9 @@ body {
 .itemSubText {
   font-size: 24px;
 }
-
+.wd-60{
+  width: 60px;
+}
 .wd-90p {
   width: 90%;
 }

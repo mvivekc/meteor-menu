@@ -18,7 +18,7 @@
             </form>
           </div>
         {{/if}}
-        <div class="task-items">
+        <div class="task-items disp-table">
           {{#each items}}
             {{> item}}
           {{/each}}
@@ -30,12 +30,12 @@
 <template name="item">
   <div class="item table-row {{#if isConfigure}}configure{{/if}} {{#if not available}}checked{{/if}}">
     {{#if isConfigure}}
-      <div class="table-cell"><button class="delete">&times;</button></div>
+      <div class="table-cell wd-60"><button class="delete">&times;</button></div>
     {{/if}}
     <div class="itemText table-cell break-word">
       {{itemText}}
       {{#if itemSubText}}
-        <div class="itemSubText table-cell">({{itemSubText}})</div>
+        <div class="itemSubText">({{itemSubText}})</div>
       {{/if}}
     </div>
     <div class="price table-cell no-break">
