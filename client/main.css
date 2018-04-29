@@ -31,6 +31,7 @@ body {
   background: #fff900;
   min-height: 130px;
   padding: 12px;
+  width: 100%;
 }
 .pointer {
   cursor: pointer;
@@ -65,6 +66,8 @@ body {
 }
 .price {
   font-size: 40px;
+  text-align: right;
+  padding-top: 3px;
 }
 .itemSubText {
   font-size: 24px;
